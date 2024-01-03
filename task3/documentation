@@ -1,0 +1,1 @@
+It writes the hostname and ip addresses of the servers specified in the Ansible inventory file to the server's /etc/hosts file.

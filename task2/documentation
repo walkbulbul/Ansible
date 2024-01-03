@@ -1,0 +1,1 @@
+This script is used to create the users in the given .csv file. If you want to use a file other than the default host file (/etc/ansible/hosts) you need to specify it with the -i parameter. ansible-playbook -i <your-host-file-path> user-deploy.yaml.
