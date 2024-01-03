@@ -5,7 +5,7 @@
   tasks:
     - name: Read user data from CSV
       read_csv:
-        path: "/root/ansible/task2/user.csv"
+        path: "/root/ansible/task2/user.csv" # Replace this path with your file
         delimiter: ","
       register: users_data
 
@@ -22,6 +22,6 @@
       become: true
       authorized_key:
         user: "{{ item.User }}"
-        key: "{{item['Pub-key']}}"  
+        key: "{{item['Pub-key']}}" # Provide the path to your public key
       with_items: "{{ users_data.list }}"
       when: item.User != 'username'  

@@ -1,6 +1,7 @@
 ---
-- name: Deploy LAMP
-  hosts: servers
+- name: Deploy LAMP 
+
+  hosts: servers # Replace 'servers' with the server group or IP addresses 
   become: yes
 
   tasks:
